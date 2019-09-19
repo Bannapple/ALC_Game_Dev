@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
         forwardInput = Input.GetAxis("Vertical");
 
 
-        // if (Input.GetKey("Space") == true) { }
+        // if (Input.GetKey(" ") == true) { }
 
 
         // We move the vehicle forward
