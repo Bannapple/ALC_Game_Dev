@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private float speed = 20f;
-    private float turnSpeed = 25;
+    private float turnSpeed = 25f;
     private float horizontalInput;
     private float forwardInput;
     private float boost = 1;
@@ -23,10 +23,7 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
 
-
-        // if (Input.GetKey(" ") == true) { }
-
-
+        
         // We move the vehicle forward
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput * boost);
         // We rotate the vehicle left and right
